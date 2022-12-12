@@ -7,5 +7,5 @@ class Post(models.Model):
     create_at = models.DateTimeField(auto_created=True)
     update_at = models.DateTimeField(auto_now=True)
 
-def __str__(self):
-    return f'[{self.pk}]--{self.title}'
+    def __str__(self):
+        return f'[{self.pk}]--{self.title}'
